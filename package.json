@@ -1,0 +1,32 @@
+{
+  "name": "biolink-water",
+  "version": "1.0.0",
+  "description": "AI-Powered Smart Water Monitoring System",
+  "main": "backend/server.js",
+  "scripts": {
+    "server": "nodemon backend/server.js",
+    "client": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd frontend && npm run build",
+    "install-backend": "npm install",
+    "install-frontend": "cd frontend && npm install",
+    "install-all": "npm install && cd frontend && npm install"
+  },
+  "keywords": ["iot", "water-monitoring", "ai", "arduino", "react", "express"],
+  "author": "BioLink Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "cookie-parser": "^1.4.6",
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "concurrently": "^8.2.2"
+  }
+}
